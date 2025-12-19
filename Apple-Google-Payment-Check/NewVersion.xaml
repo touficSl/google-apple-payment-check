@@ -1,0 +1,21 @@
+﻿<Window x:Class="Apple_Google_Payment_Check.NewVersion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Apple_Google_Payment_Check"
+        mc:Ignorable="d"
+        Title="NewVersion" Height="300" Width="350">
+    <Grid>
+        <StackPanel VerticalAlignment="top" HorizontalAlignment="Center">
+            <TextBlock x:Name="SuccessMessage" Foreground="White"  Visibility="Hidden" Text="" Background="Green" HorizontalAlignment="Left" Width="253" Margin="10,10,10,10"/>
+
+            <TextBlock x:Name="ErrorMessage" Foreground="White"  Visibility="Hidden" Text="" Background="Red" HorizontalAlignment="Left" MinWidth="253" Margin="10,10,10,10"/>
+            <TextBlock  ><Run Text="A new version is available, kindly install the new version."/><LineBreak/><Run/></TextBlock>
+            
+        </StackPanel>
+        <StackPanel Orientation="Vertical"  VerticalAlignment="Center">
+            <Button Content="Install new version"  Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
